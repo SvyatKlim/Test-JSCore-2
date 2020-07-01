@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="menu">
+        <div class="menu_btn edit_code">
+            <button type="button" class="code" >
+                <i class="fas fa-code"></i>
+            </button>
+        </div>
+        <div class="menu_btn font_style">
+            <button type="button" class="font_style-b">
+                <i class="fas fa-bold"></i>
+            </button>
+            <button type="button" class="font_style-i" type="button">
+                <i class="fas fa-italic"></i>
+            </button>
+            <button type="button" class="font_style-u">
+                <i class="fas fa-underline"></i>
+            </button>
+            <button type="button" class="font_style-s">
+                <i class="fas fa-strikethrough"></i>
+            </button>
+        </div>
+        <div class="menu_btn text_align">
+            <button type="button" class="text_align-left"><i class="fas fa-align-left"></i></button>
+            <button type="button" class="text_align-center"><i class="fas fa-align-center"></i></button>
+            <button type="button" class="text_align-right"><i class="fas fa-align-right"></i></button>
+        </div>
+        <div class="menu_btn text_options">
+            <button type="button" class="text_options-ffamily">
+                <i class="fas fa-font"></i>
+            </button>
+            <div class="dropdown dropdown_ffamily">
+                <ul>
+                    <li class="dropdown_arial">Arial</li>
+                    <li class="dropdown_georgia">Georgia</li>
+                    <li class="dropdown_impact">Impact</li>
+                    <li class="dropdown_tahoma">Tahoma</li>
+                    <li class="dropdown_times">Times New Roman</li>
+                    <li class="dropdown_verdana">Verdana</li>
+                </ul>
+            </div>
+            <button type="button" class="text_options-fsize">
+                <i class="fas fa-text-height"></i>
+            </button>
+            <div class="dropdown dropdown_fsize">
+                <ul>
+                    <li>12px</li>
+                    <li>14px</li>
+                    <li>16px</li>
+                    <li>18px</li>
+                    <li>20px</li>
+                    <li>22px</li>
+                    <li>25px</li>
+                    <li>30px</li>
+                </ul>
+            </div>
+            <button type="button" class="text_options-color"><i class="fas fa-palette"></i></button>
+            <button type="button" class="text_options-bg"><i class="fas fa-image"></i></button>
+        </div>
+        <div class="menu_btn account">
+            <button type="button" class="lock"><i class="fas fa-lock"></i></button>
+            <button type="button" class="unlock"><i class="fas fa-unlock"></i></button>
+        </div>
+    </div>
+    <div class="menu_editor">
+        <div class="menu_btn">
+            <button type="button" class="btn_save">
+                <i class="fas fa-save"></i>
+            </button>
+            <button type="button" class="btn_grid" type="button">
+                <i class="fas fa-border-all"></i>
+            </button>
+            <button type="button" class="btn_ol">
+                <i class="fas fa-list-ol"></i>
+            </button>
+            <button type="button" class="btn_ul">
+                <i class="fas fa-list-ul"></i>
+            </button>
+        </div>
+    </div>
+</header>
+<main class="container">
+    <div class="monitor">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid at dignissimos distinctio, facilis
+            ipsa laborum !</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid at dignissimos distinctio, facilis
+            ipsa laborum !</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid at dignissimos distinctio, facilis
+            ipsa laborum !</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid at dignissimos distinctio, facilis
+            ipsa laborum !</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid at dignissimos distinctio, facilis
+            ipsa laborum !</p>
+    </div>
+    <div class="editor">
+        <textarea name="tag" id="textarea" class="editor_div"></textarea>
+    </div>
+</main>
+
+<div class="popup">
+    <div class="popup popup_color">
+        <p>Choose text color</p>
+        <div class="popup_color-box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <div class="popup popup_bg">
+        <p>Choose background color or image</p>
+        <ul class="bg_tabs">
+            <li class="nav-item">
+                <a class="nav-link nav-colors active" href="#">Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-img " href="#">Image</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link nav-file " href="#">Files</a>
+            </li>
+        </ul>
+        <div class="bg_item bg_colors active">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="bg_item bg_img">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="bg_item bg_files">
+            <label class="file">
+                <input type="file" id="file" aria-label="File browser" accept="image/*">
+                <span class="file-custom"></span>
+            </label>
+        </div>
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <div class="popup popup_login">
+        <p>Sign In</p>
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+        <form name="login" class="popup_login-content">
+            <input type="text" class="loginForm" name="sign" id="login" placeholder="Login here.." required>
+            <input type="password" class="passwordForm" name="sign" id="pass" placeholder="Password here.." required>
+            <p class="error_empty"> Value is empty</p>
+            <p class="error_login"> Please check your login or password</p>
+            <button type="submit" value="sign-in" id="sign_btn">Sign In</button>
+        </form>
+    </div>
+    <div class="popup popup_grid">
+        <p>Create table</p>
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+        <form name="table">
+            <div class="grid_group">
+                <label for="countTR">Count TR:</label>
+                <input type="text" name="countTR" id="countTR" placeholder="Type here..">
+                <label for="widthTD">Width of TD:</label>
+                <input type="text" name="countTR" id="widthTD" placeholder="Type here..">
+                <label for="widthBorder">Width of border:</label>
+                <input type="text" name="widthBorder" id="widthBorder" placeholder="Type here..">
+            </div>
+            <div class="grid_group">
+                <label for="countTD">Count TD:</label>
+                <input type="text" name="countTD" id="countTD" placeholder="Type here..">
+                <label for="heightTD">Height of TD:</label>
+                <input type="text" name="countTR" id="heightTD" placeholder="Type here..">
+                <div class="grid_item">
+                    <div>
+                        <label for="styleB">Style of border:</label>
+                        <select name="styleB" id="styleB">
+                            <option value="-1" selected disabled>choose style</option>
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                            <option value="double">double</option>
+                            <option value="groove">groove</option>
+                            <option value="ridge">ridge</option>
+                            <option value="inset">inset</option>
+                            <option value="outset">outset</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="colorB">Color of border:</label>
+                        <select name="colorB" id="colorB">
+                            <option value="-1" selected disabled>choose color</option>
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                            <option value="yellow">yellow</option>
+                            <option value="white">white</option>
+                            <option value="gray">gray</option>
+                            <option value="pink">pink</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_btn">
+                <button type="submit" class="resetTable">Reset</button>
+                <button type="submit" class="createTable"> Create table</button>
+            </div>
+        </form>
+    </div>
+    <div class="popup popup_ol">
+        <p>Create Ol</p>
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+        <form name="list_ol">
+            <label for="countLi">Count li item:</label>
+            <input type="text" name="countLi" id="countLi" placeholder="Type here..">
+            <label for="typeLi">Type mark of list:</label>
+            <select name="typeLi" id="typeLi">
+                <option value="-1" selected disabled>choose Ol type mark</option>
+                <option value="1">1</option>
+                <option value="upper-roman">I</option>
+                <option value="lower-roman">i</option>
+                <option value="upper-latin">A</option>
+                <option value="lower-latin">a</option>
+            </select>
+            <div class="grid_btn">
+                <button type="submit" class="resetTable">Reset</button>
+                <button type="submit" class="createTable"> Create table</button>
+            </div>
+        </form>
+    </div>
+    <div class="popup popup_ul">
+        <p>Create Ul</p>
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+        <form name="list_ul">
+            <label for="countUlLi">Count li item:</label>
+            <input type="text" name="countLi" id="countUlLi" placeholder="Type here..">
+            <label for="typeLi">Type mark of list:</label>
+            <select name="typeUlLi" id="typeUlLi">
+                <option value="-1" selected disabled>choose ul type mark</option>
+                <option value="circle">circle</option>
+                <option value="disc">disc</option>
+                <option value="square">square</option>
+            </select>
+            <div class="grid_btn">
+                <button type="submit" class="resetTable">Reset</button>
+                <button type="submit" class="createTable"> Create table</button>
+            </div>
+        </form>
+    </div>
+    <div class="popup popup_logout">
+        <div class="grid_btn">
+            <button type="submit" id="cancel" class="cancelTable">Cancel</button>
+            <button type="submit" id="sign_out" class="resetTable"> Sign Out</button>
+        </div>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
